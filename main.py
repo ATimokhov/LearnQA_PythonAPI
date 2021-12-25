@@ -1,2 +1,2 @@
-#committest222
+#committest
 print("Hello from Andrey Timokhov")
