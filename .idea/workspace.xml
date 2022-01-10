@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76b995ce-6c5c-43b8-be4e-2036c1190242" name="Changes" comment="ex6">
+    <list default="true" id="76b995ce-6c5c-43b8-be4e-2036c1190242" name="Changes" comment="add ex7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ex7_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex7_method.py" afterDir="false" />
     </list>
@@ -321,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641388172151</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="add ex7">
+      <created>1641392355922</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1641392355922</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,6 +364,7 @@
     <MESSAGE value="committest&#10;&#10;committest" />
     <MESSAGE value="ex5" />
     <MESSAGE value="ex6" />
-    <option name="LAST_COMMIT_MESSAGE" value="ex6" />
+    <MESSAGE value="add ex7" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ex7" />
   </component>
 </project>
