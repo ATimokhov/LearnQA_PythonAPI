@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76b995ce-6c5c-43b8-be4e-2036c1190242" name="Changes" comment="ex10">
-      <change afterPath="$PROJECT_DIR$/ex_from_less/ex11_cookie.py" afterDir="false" />
+    <list default="true" id="76b995ce-6c5c-43b8-be4e-2036c1190242" name="Changes" comment="ex11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -385,7 +384,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642593637001</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ex11">
+      <created>1642598271124</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1642598271124</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -427,6 +433,7 @@
     <MESSAGE value="basecase" />
     <MESSAGE value="full 3 part" />
     <MESSAGE value="ex10" />
-    <option name="LAST_COMMIT_MESSAGE" value="ex10" />
+    <MESSAGE value="ex11" />
+    <option name="LAST_COMMIT_MESSAGE" value="ex11" />
   </component>
 </project>
