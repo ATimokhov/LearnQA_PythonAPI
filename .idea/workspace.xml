@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76b995ce-6c5c-43b8-be4e-2036c1190242" name="Changes" comment="TestFirstAPI">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/base_case.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_auth.py" afterDir="false" />
+    <list default="true" id="76b995ce-6c5c-43b8-be4e-2036c1190242" name="Changes" comment="basecase">
+      <change afterPath="$PROJECT_DIR$/lib/assertions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check_redirects.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/check_redirects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/check_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/check_type.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex5_parsing_json.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/ex5_parsing_json.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex6_long_redirects.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/ex6_long_redirects.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex7_method.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/ex7_method.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex8_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/ex8_token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_cookie.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/get_cookie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/get_headers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/get_headers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/json_parsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/json_parsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_examples.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/test_examples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_first_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/ex_from_less/test_first_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/base_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/lib/base_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_user_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_user_auth.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +65,7 @@
       <recent name="C:\Users\Andrey\Documents\GitHub\LearnQA_PythonAPI\ex_from_less" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.base_case">
+  <component name="RunManager" selected="Python tests.Python tests in test_user_auth.py">
     <configuration name="base_case" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="LearnQA_PythonAPI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,8 +173,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.base_case" />
         <item itemvalue="Python tests.Python tests in test_user_auth.py" />
+        <item itemvalue="Python.base_case" />
         <item itemvalue="Python tests.Python tests in test_first_api.py" />
         <item itemvalue="Python tests.Python tests in test_examples.py" />
         <item itemvalue="Python.ex8_token" />
@@ -351,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642190216640</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="basecase">
+      <created>1642583913532</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1642583913532</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,6 +383,7 @@
     <MESSAGE value="add ex7" />
     <MESSAGE value="add ex8" />
     <MESSAGE value="TestFirstAPI" />
-    <option name="LAST_COMMIT_MESSAGE" value="TestFirstAPI" />
+    <MESSAGE value="basecase" />
+    <option name="LAST_COMMIT_MESSAGE" value="basecase" />
   </component>
 </project>
