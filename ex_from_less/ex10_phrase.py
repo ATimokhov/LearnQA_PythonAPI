@@ -3,7 +3,6 @@
 #print(f"Введено {count} символов")
 
 class TestSetPhrase:
-    max_count = 15
 
     def test_check_phrase(self):
         phrase = input("Set a phrase: ")

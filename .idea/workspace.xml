@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="76b995ce-6c5c-43b8-be4e-2036c1190242" name="Changes" comment="full 3 part">
-      <change afterPath="$PROJECT_DIR$/ex10_phrase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_user_auth.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_user_auth.py" afterDir="false" />
-    </list>
+    <list default="true" id="76b995ce-6c5c-43b8-be4e-2036c1190242" name="Changes" comment="ex10" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,10 +55,10 @@
       <recent name="C:\Users\Andrey\Documents\GitHub\LearnQA_PythonAPI" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrey\Documents\GitHub\LearnQA_PythonAPI\ex_from_less" />
       <recent name="C:\Users\Andrey\Documents\GitHub\LearnQA_PythonAPI" />
       <recent name="C:\Users\Andrey\Documents\GitHub\LearnQA_PythonAPI\lib" />
       <recent name="C:\Users\Andrey\Documents\GitHub\LearnQA_PythonAPI\tests" />
-      <recent name="C:\Users\Andrey\Documents\GitHub\LearnQA_PythonAPI\ex_from_less" />
     </key>
   </component>
   <component name="RunManager" selected="Python.ex10_phrase">
@@ -99,7 +95,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Andrey\Documents\GitHub\LearnQA_PythonAPI\ex10_phrase.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Andrey\Documents\GitHub\LearnQA_PythonAPI\ex_from_less\ex10_phrase.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -351,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642586967129</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="ex10">
+      <created>1642591340484</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1642591340484</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -392,6 +395,7 @@
     <MESSAGE value="TestFirstAPI" />
     <MESSAGE value="basecase" />
     <MESSAGE value="full 3 part" />
-    <option name="LAST_COMMIT_MESSAGE" value="full 3 part" />
+    <MESSAGE value="ex10" />
+    <option name="LAST_COMMIT_MESSAGE" value="ex10" />
   </component>
 </project>
