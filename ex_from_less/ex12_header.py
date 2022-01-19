@@ -1,5 +1,6 @@
 import pytest
 import requests
+
 #resp_header1 = requests.get("https://playground.learnqa.ru/api/homework_header")
 #header_value1 = dict(resp_header1.headers)
 #print(f"Значение headers = {header_value1}")
