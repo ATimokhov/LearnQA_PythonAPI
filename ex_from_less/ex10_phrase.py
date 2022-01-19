@@ -1,3 +1,4 @@
+import pytest
 #phrase = input("Set a phrase: ")
 #count = len(phrase)
 #print(f"Введено {count} символов")
