@@ -20,6 +20,3 @@ class TestUAgent:
         assert ua_resp.json()['platform'] == ua_data['platform'], f"Значение {ua_resp.json()['platform']} не равно ожидаемому {ua_data['platform']}"
         assert ua_resp.json()['browser'] == ua_data['browser'], f"Значение {ua_resp.json()['browser']} не равно ожидаемому {ua_data['browser']}"
         assert ua_resp.json()['device'] == ua_data['device'], f"Значение {ua_resp.json()['device']} не равно ожидаемому {ua_data['device']}"
-
-
-
