@@ -3,18 +3,15 @@ import requests
 from lib.base_case import BaseCase
 from lib.assertions import Assertions
 
-class TestUserAuth(BaseCase):
 
+class TestUserAuth(BaseCase):
     exclude_params = [
         ("no_cookie"),
         ("no_token")
     ]
 
     def setup(self):
-        data = {
-            'email': 'vinkotov@example.com',
-            'password': '1234'
-        }
+        data = {"email": "vinkotov@example.com", "password": "1234"}
         response1 = requests.post("https://playground.learnqa.ru/api/user/login", data=data)
 
         self.auth_sid = self.get_cookie(response1, "auth_sid")
