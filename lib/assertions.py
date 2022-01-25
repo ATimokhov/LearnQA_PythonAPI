@@ -1,6 +1,7 @@
 from requests import Response
 import json
 
+
 class Assertions:
     @staticmethod
     def assert_json_has_keys(response: Response, names: list):

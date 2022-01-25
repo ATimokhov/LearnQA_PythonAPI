@@ -3,7 +3,6 @@ from lib.base_case import BaseCase
 from lib.assertions import Assertions
 import time
 
-
 class TestUserDelete(BaseCase):
 
     def test_delete_user_with_id_2(self):

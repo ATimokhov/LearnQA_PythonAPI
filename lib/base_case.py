@@ -4,7 +4,6 @@ from requests import Response
 from typing import Tuple
 from lib.my_requests import MyRequests
 
-
 class BaseCase:
 
     def get_cookie(self, response: Response, cookie_name):
