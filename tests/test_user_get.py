@@ -2,6 +2,7 @@ from lib.my_requests import MyRequests
 from lib.base_case import BaseCase
 from lib.assertions import Assertions
 
+
 class TestUserGet(BaseCase):
 
     def test_get_user_details_not_auth(self):
@@ -17,7 +18,10 @@ class TestUserGet(BaseCase):
             'email': 'vinkotov@example.com',
             'password': '1234'
         }
-        response1 = MyRequests.post("/user/login", data=data)
+        response1 = MyRequests.post(
+            "/user/login",
+            data=data
+        )
 
         auth_sid = self.get_cookie(response1, 'auth_sid')
         token = self.get_header(response1, 'x-csrf-token')
@@ -31,3 +35,38 @@ class TestUserGet(BaseCase):
 
         expected_fields = ["username", "email", "firstName", "lastName"]
         Assertions.assert_json_has_keys(response2, expected_fields)
+
+    # EX16
+
+    def test_get_user_info_auth_as_another_user(self):
+        my_data = self.prepare_registration_data()
+        MyRequests.post(
+            "/user/",
+            data=my_data)
+        my_login_data = {
+            'email': my_data['email'],
+            'password': my_data['password']
+        }
+
+        response1 = MyRequests.post(
+            "/user/login",
+            data=my_login_data
+        )
+        auth_sid = self.get_cookie(
+            response1,
+            "auth_sid"
+        )
+        token = self.get_header(
+            response1,
+            "x-csrf-token"
+        )
+
+        response2 = MyRequests.get(
+            "/user/2",
+            headers={"x-csrf-token": token},
+            cookies={"auth_sid": auth_sid}
+        )
+
+        Assertions.assert_json_has_key(response2, "username")
+        unexpected_keys = ["email", "firstName", "lastName"]
+        Assertions.assert_json_has_not_keys(response2, unexpected_keys)
