@@ -2,6 +2,7 @@ from lib.my_requests import MyRequests
 from lib.base_case import BaseCase
 from lib.assertions import Assertions
 import pytest
+import allure
 
 params = [
     ("username"),
@@ -12,8 +13,10 @@ params = [
 ]
 
 
+@allure.epic("Registration cases")
 class TestUserRegister(BaseCase):
 
+    @allure.description("Positive registration case")
     def test_create_user_successfully(self):
         data = self.prepare_registration_data()
 
@@ -22,6 +25,7 @@ class TestUserRegister(BaseCase):
         Assertions.assert_code_status(response, 200)
         Assertions.assert_json_has_key(response, "id")
 
+    @allure.description("Create with existing email")
     def test_create_user_with_existing_email(self):
         email = 'vinkotov@example.com'
         data = self.prepare_registration_data(email)
@@ -32,7 +36,7 @@ class TestUserRegister(BaseCase):
         assert response.content.decode("utf-8") == f"Users with email '{email}' already exists", f"Unexpected response content {response.content}"
     # ex 15
     # reg without @ simbol in email
-
+    @allure.description("Create without @ simbol in email")
     def test_create_user_with_incorrect_email(self):
         email = 'vinkotov-example.com'
         data = self.prepare_registration_data(email)
@@ -42,6 +46,7 @@ class TestUserRegister(BaseCase):
             f"Unexpected response content {response.content}"
 
     # reg with missed params
+    @allure.description("reg with missed params")
     @pytest.mark.parametrize('param', params)
     def test_create_user_without_param(self, param):
         data = self.prepare_registration_data()
@@ -53,6 +58,7 @@ class TestUserRegister(BaseCase):
             f"Unexpected response content {response.content} with missed param: {param}"
 
     # reg with short name
+    @allure.description("reg with short name")
     def test_creating_user_with_short_name(self):
         data = self.prepare_registration_data()
         data['firstName'] = 'L'
@@ -62,6 +68,7 @@ class TestUserRegister(BaseCase):
             f"Unexpected response content for field 'firstName' when it is too short"
 
     # reg with long name
+    @allure.description("reg with long name")
     def test_create_user_long_name(self):
         data = self.prepare_registration_data()
         long_name = ""

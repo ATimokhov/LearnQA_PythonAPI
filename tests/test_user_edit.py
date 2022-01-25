@@ -3,11 +3,12 @@ from lib.base_case import BaseCase
 from lib.assertions import Assertions
 import pytest
 import time
+import allure
 
+@allure.epic("Edit cases")
 class TestUserEdit(BaseCase):
 
     def test_edit_just_created_user(self):
-
         # REGISTER
         register_data = self.prepare_registration_data()
         response1 = MyRequests.post("/user/", data=register_data)
@@ -56,6 +57,7 @@ class TestUserEdit(BaseCase):
 
     # EX17
     # CHANGE DATA BY ANAUTORIZED USER
+    @allure.description("Edit user by not auth")
     def test_edit_by_not_auth_user(self):
         new_name = "New_Name"
         response1 = MyRequests.put(
@@ -67,6 +69,7 @@ class TestUserEdit(BaseCase):
         Assertions.assert_expected_response_content(response1, "Auth token not supplied")
 
     # CHANGE DATA BY AUTORIZED ANOTHER USER
+    @allure.description("Edit user by another user")
     def test_edit_user_auth_as_another_user(self):
         # REG user1
         response1, registration_data1 = self.generate_new_user()
@@ -135,6 +138,7 @@ class TestUserEdit(BaseCase):
     ]
 
     # CHANGE DATA WITH INCORRECT MAIL\NAME
+    @allure.description("Change user data with some incorrect data mail and name")
     @pytest.mark.parametrize("input_data, expected_result", incorrect_data)
     def test_edit_with_incorrect_data(self, input_data, expected_result):
         # REGISTER

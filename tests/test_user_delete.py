@@ -2,10 +2,12 @@ from lib.my_requests import MyRequests
 from lib.base_case import BaseCase
 from lib.assertions import Assertions
 import time
+import allure
 
-
+@allure.epic("Delete cases")
 class TestUserDelete(BaseCase):
     # EX18
+    @allure.description("Try to delete user with id 2")
     def test_delete_user_with_id_2(self):
         data = {
             'email': 'vinkotov@example.com',
@@ -31,6 +33,7 @@ class TestUserDelete(BaseCase):
         expected_fields = ["username", "firstName", "lastName", "email"]
         Assertions.assert_json_has_keys(response3, expected_fields)
 
+    @allure.description("Positive delete user case")
     def test_delete_user_successfully(self):
         # REGISTER
         response1, registration_data = self.generate_new_user()
@@ -66,6 +69,7 @@ class TestUserDelete(BaseCase):
         Assertions.assert_code_status(response4, 404)
         Assertions.assert_expected_response_content(response4, "User not found")
 
+    @allure.description("Try delete user auth as another")
     def test_delete_user_auth_as_another_user(self):
         # REGISTER user1
         response1, registration_data1 = self.generate_new_user()
