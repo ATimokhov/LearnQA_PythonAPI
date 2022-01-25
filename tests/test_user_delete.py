@@ -3,8 +3,9 @@ from lib.base_case import BaseCase
 from lib.assertions import Assertions
 import time
 
-class TestUserDelete(BaseCase):
 
+class TestUserDelete(BaseCase):
+    # EX18
     def test_delete_user_with_id_2(self):
         data = {
             'email': 'vinkotov@example.com',
