@@ -1,10 +1,12 @@
-import requests
-import pytest
 import json.decoder
-from requests import Response
 from datetime import datetime
+from requests import Response
+from typing import Tuple
+from lib.my_requests import MyRequests
+
 
 class BaseCase:
+
     def get_cookie(self, response: Response, cookie_name):
         assert cookie_name in response.cookies, f"Cannot find cookie name '{cookie_name}' in the last response"
         return response.cookies[cookie_name]
@@ -34,3 +36,7 @@ class BaseCase:
             'lastName': 'learnqa',
             'email': email
         }
+
+    def generate_new_user(self) -> Tuple[Response, dict]:
+        user_data = self.prepare_registration_data()
+        return MyRequests.post('/user/', data=user_data), user_data
