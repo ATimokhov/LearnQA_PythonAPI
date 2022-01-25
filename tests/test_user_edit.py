@@ -2,7 +2,7 @@ from lib.my_requests import MyRequests
 from lib.base_case import BaseCase
 from lib.assertions import Assertions
 import pytest
-
+import time
 
 class TestUserEdit(BaseCase):
 
@@ -74,7 +74,7 @@ class TestUserEdit(BaseCase):
         Assertions.assert_json_has_key(response1, "id")
         email1 = registration_data1['email']
         password1 = registration_data1['password']
-
+        time.sleep(1)
         # REG user2
         response2, registration_data2 = self.generate_new_user()
         Assertions.assert_code_status(response2, 200)
@@ -110,6 +110,7 @@ class TestUserEdit(BaseCase):
             'email': email2,
             'password': password2
         }
+        time.sleep(1)
         response5 = MyRequests.post("/user/login", data=login_data2)
         auth_sid2 = self.get_cookie(response5, "auth_sid")
         token2 = self.get_header(response5, "x-csrf-token")
